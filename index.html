@@ -240,93 +240,6 @@
       border-color: rgba(30, 64, 53, 0.4);
     }
 
-    /* Email form */
-    .form-section {
-      animation: fadeUp 0.8s ease 0.5s both;
-      margin-bottom: 56px;
-    }
-
-    .form-label {
-      font-size: 13px;
-      font-weight: 500;
-      letter-spacing: 0.08em;
-      color: var(--green);
-      text-transform: uppercase;
-      margin-bottom: 16px;
-      display: block;
-    }
-
-    .form-row {
-      display: flex;
-      gap: 12px;
-      max-width: 480px;
-    }
-
-    .email-input {
-      flex: 1;
-      padding: 14px 20px;
-      font-family: 'DM Sans', sans-serif;
-      font-size: 15px;
-      font-weight: 300;
-      color: var(--text-dark);
-      background: white;
-      border: 1px solid var(--cream-darker);
-      border-radius: 4px;
-      outline: none;
-      transition: border-color 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .email-input::placeholder {
-      color: var(--text-light);
-    }
-
-    .email-input:focus {
-      border-color: var(--green-light);
-      box-shadow: 0 0 0 3px rgba(30, 64, 53, 0.08);
-    }
-
-    .submit-btn {
-      padding: 14px 28px;
-      font-family: 'DM Sans', sans-serif;
-      font-size: 13px;
-      font-weight: 500;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--cream);
-      background: var(--green);
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: background 0.2s ease, transform 0.1s ease;
-      white-space: nowrap;
-    }
-
-    .submit-btn:hover {
-      background: var(--green-mid);
-      transform: translateY(-1px);
-    }
-
-    .submit-btn:active {
-      transform: translateY(0);
-    }
-
-    .form-note {
-      font-size: 12px;
-      color: var(--text-light);
-      margin-top: 10px;
-    }
-
-    /* Success message */
-    .success-msg {
-      display: none;
-      font-size: 14px;
-      color: var(--green-light);
-      margin-top: 12px;
-      font-style: italic;
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 18px;
-    }
-
     /* Contact */
     .contact-section {
       animation: fadeUp 0.8s ease 0.55s both;
@@ -506,22 +419,6 @@
       <div class="open-badge">
         <div class="open-dot"></div>
         <span class="open-text">Open for engagements now</span>
-      </div>
-
-      <!-- Email capture -->
-      <div class="form-section">
-        <label class="form-label" for="email">Be the first to know when we launch</label>
-        <div class="form-row">
-          <input
-            type="email"
-            id="email"
-            class="email-input"
-            placeholder="your@email.com"
-          />
-          <button class="submit-btn" onclick="handleSubmit()">Notify Me</button>
-        </div>
-        <p class="form-note">No spam. Just a note when the full site is live.</p>
-        <p class="success-msg" id="success">Thank you — I'll be in touch soon.</p>
       </div>
 
       <!-- Contact -->
